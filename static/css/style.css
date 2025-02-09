@@ -246,6 +246,7 @@ body {
         max-width: 400px;
         height: 80vh;  /* test and adjust this as needed */
         max-height: 500px;
+        bottom: 10px;
     }
 
     #chatbox {        
@@ -258,11 +259,16 @@ body {
     #chat-input {
         flex-direction: row; /* Keep them side by side */
         align-items: center; /* Align vertically */
+        padding: 10px;
+        position: relative;
+        bottom: 0;  /* Ensures it doesn't get cut off */
+        width: 100%;
     }
 
     #user-input {
         width: 75%; /* Input takes most of the space */
         font-size: 14px; /* Slightly smaller text */
+        padding: 8px;
     }
 
     #send-btn {
