@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, jsonify, redirect, session
 from database.database_manager import DatabaseManager, ResponseManager, AdminManager
+import os
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"  # Required for session management
+app.secret_key = os.getenv("SECRET_KEY", "fallback_secret_key")  # Uses env variable for Render, fallback locally
 
 # Initialize database and managers
 db = DatabaseManager()
