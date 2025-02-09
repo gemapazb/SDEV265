@@ -242,38 +242,38 @@ body {
     
     /* Center chatbot on phone */
     #chatbot-container {
-        width: 90vw;
+        width: 95vw;
         max-width: 400px;
-        height: 80vh;  /* test and adjust this as needed */
-        max-height: 500px;
+        height: 85vh;  /* test and adjust this as needed */
+        max-height: 600px;
         bottom: 10px;
+        right: 10px;
     }
 
     #chatbox {        
-        min-height: 70vh; /*Make it taller */
-        max-height: 450px;
+        min-height: 75vh; /*Make it taller */
+        max-height: 550px;
         overflow-y: auto;
     }
 
     /* Keep input and send button aligned */
     #chat-input {
-        flex-direction: row; /* Keep them side by side */
-        align-items: center; /* Align vertically */
-        padding: 10px;
-        position: relative;
-        bottom: 0;  /* Ensures it doesn't get cut off */
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
     }
 
     #user-input {
-        width: 75%; /* Input takes most of the space */
-        font-size: 14px; /* Slightly smaller text */
-        padding: 8px;
+        flex: 1; 
+        padding: 10px;
+        font-size: 14px;
     }
 
     #send-btn {
         width: 25%; /* Button takes remaining space */
         font-size: 14px;
+        padding: 8px;
     }
 
     /* Make chatbot header readable */
