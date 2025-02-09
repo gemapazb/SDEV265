@@ -1,3 +1,14 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+# Ignore the virtual environment
+venv/
+*.pyc
+__pycache__/
+
+# Ignore the database file
+database/chatbot.db
+
+# Ignore IDE settings (if using VS Code or PyCharm)
+.idea/
+.vscode/
